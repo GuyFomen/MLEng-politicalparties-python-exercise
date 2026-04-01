@@ -13,11 +13,13 @@ class DataLoader:
 
     def load_data(self):
         """Loads data from a CSV file."""
-        return pd.read_csv(self.filepath)
+        self.data = pd.read_csv(self.filepath)
+        return self.data
 
     @staticmethod
     def remove_characters(text: str) -> str:
         """Remove non-letters from a given string"""
+        string = re.sub(r'https?://\S+|www\.\S+', '', text)
         remove_chars = string.punctuation
         translator = str.maketrans('', '', remove_chars)
         return text.translate(translator)
@@ -25,7 +27,7 @@ class DataLoader:
     def clean_text(self, text: str) -> str:
         """Keep only retain words in a given string"""
         text = self.remove_characters(text)
-        return text.strip()
+        return text.strip().lower()
 
     def vectorize_text(self, tweets: list[str]):
         self.vectorizer = TfidfVectorizer(max_features=2500, min_df=1, max_df=0.8)

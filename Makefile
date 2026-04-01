@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-PYTHON := C:\Users\chamb\AppData\Local\Microsoft\WindowsApps\python3.exe # TODO: add your python path
+PYTHON := /c/Users/chamb/AppData/Local/Microsoft/WindowsApps/python3.exe
 VENV_DIR := .venv
 ACTIVATE_VENV := source $(VENV_DIR)/Scripts/activate
 

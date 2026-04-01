@@ -1,9 +1,9 @@
 streamlit
 requests
-fastapi==0.110.0
-pydantic==2.6.4
-pydantic_core==2.16.3
-mlflow==2.11.1
+fastapi
+pydantic
+pydantic_core
+mlflow
 uvicorn
 xgboost
 pytest
