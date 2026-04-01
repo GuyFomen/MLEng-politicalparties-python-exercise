@@ -19,8 +19,8 @@ class DataLoader:
     @staticmethod
     def remove_characters(text: str) -> str:
         """Remove non-letters from a given string"""
-        string = re.sub(r'https?://\S+|www\.\S+', '', text)
-        remove_chars = string.punctuation
+        text = re.sub(r'https?://\S+|www\.\S+', '', str(text))
+        remove_chars = string.punctuation + string.digits
         translator = str.maketrans('', '', remove_chars)
         return text.translate(translator)
 
