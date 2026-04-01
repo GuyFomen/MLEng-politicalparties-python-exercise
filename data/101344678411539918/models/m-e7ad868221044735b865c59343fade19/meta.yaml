@@ -1,0 +1,10 @@
+artifact_location: file:/usr/src/app/data/101344678411539918/models/m-e7ad868221044735b865c59343fade19/artifacts
+creation_timestamp: 1775081582960
+experiment_id: '101344678411539918'
+last_updated_timestamp: 1775081586642
+model_id: m-e7ad868221044735b865c59343fade19
+model_type: null
+name: model
+source_run_id: 913e1c2bdfea4e9a8d3d6e8f3f5afde7
+status: 2
+status_message: null

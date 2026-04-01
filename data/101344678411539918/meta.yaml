@@ -1,0 +1,7 @@
+artifact_location: file:/usr/src/app/data/101344678411539918
+creation_time: 1775081357976
+experiment_id: '101344678411539918'
+last_update_time: 1775081357976
+lifecycle_stage: active
+name: tweet-classifier
+workspace: default

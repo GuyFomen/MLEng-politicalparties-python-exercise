@@ -1,0 +1,14 @@
+artifact_uri: file:/usr/src/app/data/101344678411539918/913e1c2bdfea4e9a8d3d6e8f3f5afde7/artifacts
+end_time: 1775081586648
+entry_point_name: ''
+experiment_id: '101344678411539918'
+lifecycle_stage: active
+run_id: 913e1c2bdfea4e9a8d3d6e8f3f5afde7
+run_name: rebellious-squid-930
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775081573638
+status: 3
+tags: []
+user_id: chamb
