@@ -1,16 +1,16 @@
 SHELL := /bin/bash
-PYTHON := /opt/homebrew/bin/python3 # TODO: add your python path
+PYTHON := C:\Users\chamb\AppData\Local\Microsoft\WindowsApps\python3.exe # TODO: add your python path
 VENV_DIR := .venv
-ACTIVATE_VENV := source $(VENV_DIR)/bin/activate
+ACTIVATE_VENV := source $(VENV_DIR)/Scripts/activate
 
 install: venv
 
-venv: $(VENV_DIR)/bin/activate
+venv: $(VENV_DIR)/Scripts/activate
 
-$(VENV_DIR)/bin/activate: requirements.txt
+$(VENV_DIR)/Scripts/activate: requirements.txt
 	test -d $(VENV_DIR) || $(PYTHON) -m venv $(VENV_DIR)
 	$(ACTIVATE_VENV); pip install -Ur requirements.txt
-	touch $(VENV_DIR)/bin/activate
+	touch $(VENV_DIR)/Scripts/activate
 
 test:
 	pytest tests
